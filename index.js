@@ -381,6 +381,7 @@ async function run() {
       const result = await allBannerCollection.insertOne(user);
       res.send(result);
     });
+    
 
     // app.get("/logos/admin/:email", async (req, res) => {
     //   const email = req.params.email;
