@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors())
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient,ObjectId, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@robiul.13vbdvd.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -28,13 +28,9 @@ async function run() {
     const allLogoCollection = client.db("Shokher-Bazar").collection("logoInfoo");
     const allLinksCollection = client.db("Shokher-Bazar").collection("linkInfoo");
     const allAddressCollection = client.db("Shokher-Bazar").collection("addressInfoo");
-
     const allBannerCollection = client.db("Shokher-Bazar").collection("bannerInfoo");
     const allNumberCollection = client.db("Shokher-Bazar").collection("numberInfoo");
-
     const feedbackCollection=client.db('Shokher-Bazar').collection('feedbacks')
-
-
 
     /////////////////////////////////////////////////////////////////////////
     //                        news info part
