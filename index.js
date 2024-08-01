@@ -24,7 +24,6 @@ async function run() {
   try {
     const productsCollection = client.db("Shokher-Bazar").collection("Products");
     const orderssCollection = client.db("Shokher-Bazar").collection("Orders");
-    const UsersCollection = client.db("Shokher-Bazar").collection("usersInfoo");
     const allLogoCollection = client.db("Shokher-Bazar").collection("logoInfoo");
     const allLinksCollection = client.db("Shokher-Bazar").collection("linkInfoo");
     const allAddressCollection = client.db("Shokher-Bazar").collection("addressInfoo");
